@@ -1,0 +1,30 @@
+{
+  "name": "gamepost-api",
+  "version": "1.0.0",
+  "description": "REST API for gamepost.com",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/josue0ghost/gamepost-api.git"
+  },
+  "keywords": [
+    "API",
+    "REST",
+    "GAMEPOST"
+  ],
+  "author": "Emmanuel Alvarado",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/josue0ghost/gamepost-api/issues"
+  },
+  "homepage": "https://github.com/josue0ghost/gamepost-api#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
