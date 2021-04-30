@@ -4,7 +4,7 @@
   "description": "REST API for gamepost.com",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha test/"
   },
   "repository": {
     "type": "git",
@@ -22,10 +22,14 @@
   },
   "homepage": "https://github.com/josue0ghost/gamepost-api#readme",
   "devDependencies": {
-    "nodemon": "^2.0.7"
+    "chai-http": "^4.3.0",
+    "mocha": "^8.3.2",
+    "nodemon": "^2.0.7",
+    "nyc": "^15.1.0"
   },
   "dependencies": {
     "aws-sdk": "^2.889.0",
+    "chai": "^4.3.4",
     "express": "^4.17.1",
     "uuid": "^8.3.2"
   }

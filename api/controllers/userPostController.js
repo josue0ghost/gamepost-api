@@ -4,7 +4,6 @@ const { v4: uuidv4 } = require('uuid');
 /**
  * AWS MODULE
  */
-
 var AWS = require('aws-sdk');
     
  /**

@@ -1,7 +1,8 @@
+
 var express = require('express'),
-    app = express(),
-    port = process.env.PORT || 3000;
-    
+app = express(),
+port = process.env.PORT || 8000;
+
 app.use(express.json()) // for parsing application/json
 app.use(express.urlencoded({ extended: true })) // for parsing application/x-www-form-urlencoded
 app.use(function(req, res, next) {
@@ -11,9 +12,10 @@ app.use(function(req, res, next) {
     res.setHeader('Access-Control-Allow-Credentials', true);
     next();
 });
-    
+
 
 var routes = require('./api/routes/userPostRoutes');
+module.exports = app;
 routes(app);
 app.listen(port);
 
