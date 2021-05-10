@@ -33,7 +33,6 @@ exports.create_a_post = function(req, res) {
         }
     }
 
-    console.log(params);
     docClient.put(params, function(err, data) {
         if (err) {
             res.status(500).json({"error":"server error","err":err});
@@ -106,9 +105,7 @@ exports.list_posts = async function(req, res) {
             posts.push(Promise.Items);
         });
     }
-    console.log("Posts: ", posts)
     for (var PostElement of posts[0]) {
-        console.log("PostsElement: ", PostElement)
         params = {
             TableName: 'Users',
             Key: {
@@ -120,7 +117,5 @@ exports.list_posts = async function(req, res) {
         PostElement.name = name;
     }
     
-    console.log("Posts: ", posts)
-
     res.json(posts);
 };
