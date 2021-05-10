@@ -1,7 +1,7 @@
 
 var express = require('express'),
 app = express(),
-port = process.env.PORT || 8000;
+port = process.env.PORT || 3000;
 
 app.use(express.json()) // for parsing application/json
 app.use(express.urlencoded({ extended: true })) // for parsing application/x-www-form-urlencoded
@@ -14,7 +14,7 @@ app.use(function(req, res, next) {
 });
 
 
-var routes = require('./api/routes/userPostRoutes');
+var routes = require('./api/routes/index');
 module.exports = app;
 routes(app);
 app.listen(port);
